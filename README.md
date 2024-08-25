@@ -29,7 +29,7 @@ CNAPP Dashboard is a React-based application for managing and visualizing widget
    git clone https://github.com/yourusername/cnapp-dashboard.git
 2. Change to the project directory:
     ```bash
-    cd cnapp-dashboard
+    cd your-project-directory
 3. Install the necessary npm packages:
    ```bash
    npm install
