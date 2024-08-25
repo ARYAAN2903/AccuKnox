@@ -22,3 +22,15 @@ CNAPP Dashboard is a React-based application for managing and visualizing widget
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/cnapp-dashboard.git
+2. Change to the project directory:
+    ```bash
+    cd cnapp-dashboard
+3. Install the necessary npm packages:
+   ```bash
+   npm install
+4. Start the development server to run the application:
+   ```bash
+   npm start
+5. This will compile the application and start a local server. By default, it will be available at http://localhost:3000.
+6. Open your web browser and navigate to http://localhost:3000 to view the running application.
+
