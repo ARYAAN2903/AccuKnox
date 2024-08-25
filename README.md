@@ -5,8 +5,8 @@
 CNAPP Dashboard is a React-based application for managing and visualizing widgets within categories. It features a user-friendly interface for adding, updating, and removing widgets, as well as viewing them organized by categories. The application uses Redux for state management and React-Bootstrap for UI components.
 
 <p align="center">
-  <img src="src/assets/images/Dashboard.png" alt="Dashboard Screenshot" width="400" height="300" style="margin-right: 20px;"/>
-  <img src="src/assets/images/WidgetMenu.png" alt="WidgetMenu Screenshot" width="400" height="300"/>
+  <img src="src/assets/images/Dashboard.png" alt="Dashboard Screenshot" width="600" height="350" style="margin-right: 20px;"/>
+  <img src="src/assets/images/WidgetMenu.png" alt="WidgetMenu Screenshot" width="600" height="350"/>
 </p>
 
 ## Features
