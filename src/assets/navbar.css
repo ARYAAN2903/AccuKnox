@@ -1,0 +1,48 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #003366; /* Dark blue background */
+    color: white;
+    padding: 15px 20px; /* Adjust height of the navbar */
+  }
+  
+  .navbar-brand {
+    color: white; /* White text color */
+  }
+  
+  /* Align search form to center */
+  .form-inline {
+    display: flex;
+    justify-content: center; /* Center align the search form */
+    width: 100%;
+  }
+  
+  .form-control {
+    max-width: 400px; /* Limit search bar width */
+  }
+  
+  /* Navbar items styling */
+  .nav-link {
+    color: white; /* White text color for nav links */
+  }
+  
+  /* Active state styling */
+  .nav-item.active .nav-link {
+    color: white; /* Maintain white color for active link */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      text-align: center; /* Center-align items in collapse menu */
+    }
+  
+    .navbar-nav {
+      margin-bottom: 10px; /* Add space below the navbar links */
+    }
+  
+    .form-inline {
+      width: 100%; /* Ensure form takes full width */
+      margin-top: 10px; /* Space above the search bar */
+    }
+  }
+  

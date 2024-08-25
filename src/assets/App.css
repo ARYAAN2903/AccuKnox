@@ -1,0 +1,151 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center the title and button vertically */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  margin-top: 5px; /* Add margin from the bottom of the navbar */
+}
+
+.dashboard-title {
+  margin-bottom: 0; /* Remove margin below the h1 tag */
+}
+
+.dashboard .btn-primary {
+  background-color: #003366; /* Dark blue background */
+  border-color: #003366; /* Dark blue border */
+}
+
+.dashboard .btn-primary:hover {
+  background-color: #001a33; /* Even darker blue on hover */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column; /* Stack categories vertically */
+  gap: 20px; /* Space between categories */
+  padding: 20px;
+  position: relative;
+}
+
+.category {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex; 
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: fit-content; /* Width grows based on content */
+  min-width: 350px; /* Increase minimum width */
+  min-height: 150px; /* Set a minimum height for the category container */
+  margin-bottom: 20px; /* Margin between individual category containers */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.category .widget-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap widgets to the next line */
+  gap: 20px; /* Space between widgets */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Ensure container takes full width */
+}
+
+.widget {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px; /* Increased padding for better content spacing */
+  width: 465px; /* Fixed width for widgets */
+  height: 200px; /* Fixed height for widgets */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevent widgets from shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the start */
+  overflow: hidden; /* Hide overflow */
+}
+
+.widget-name {
+  font-weight: bold;
+  margin-bottom: 10px; /* Increased space between name and text */
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+.widget-text {
+  font-size: 14px; /* Adjusted font size for better readability */
+  color: #666; /* Adjust text color */
+  overflow-wrap: break-word; /* Allow text to wrap */
+  white-space: normal; /* Allow text to wrap */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+.add-widget-button {
+  margin-top: 10px;
+  padding: 10px 15px; /* Increased padding for better button size */
+  background-color: #003366; /* Dark blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.add-widget-button:hover {
+  background-color: #001a33; /* Darker blue on hover */
+}
+
+.widget-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.remove-widget-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 24px; /* Increased font size for better visibility */
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column; /* Stack title and button on smaller screens */
+    align-items: center;
+    gap: 10px; /* Space between title and button */
+  }
+
+  .dashboard {
+    align-items: center; /* Center-align category containers horizontally */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .category {
+    width: 100%; /* Make category containers full width */
+    max-width: none; /* Remove any maximum width constraint */
+    margin-bottom: 20px; /* Maintain spacing between categories */
+  }
+
+  .category .widget-container {
+    flex-direction: column; /* Stack widgets vertically */
+    align-items: center; /* Center-align widgets within the container */
+  }
+
+  .widget {
+    width: 100%; /* Make widgets full width */
+    max-width: 320px; /* Limit the maximum width to ensure fit */
+    height: 150px; /* Adjust height based on content */
+    margin-bottom: 20px; /* Space between widgets */
+  }
+
+  .add-widget-button {
+    width: auto; /* Adjust width for better fit */
+  }
+}
+

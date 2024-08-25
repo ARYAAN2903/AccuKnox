@@ -1,0 +1,179 @@
+/* OffcanvasRight.css */
+
+/* Existing styles remain the same */
+
+.offcanvas-end {
+    width: 400px !important; /* Ensure this width is applied */
+}
+
+.offcanvas-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Offcanvas Header Styling */
+.offcanvas-end .offcanvas-header {
+    background-color: #003366; /* Dark blue color */
+    color: white; /* White text color for contrast */
+    border-bottom: 1px solid #ddd; /* Optional: Border at the bottom of the header */
+}
+
+.offcanvas-end .offcanvas-title {
+    color: white; /* Ensure title text color is white */
+}
+
+.offcanvas-end .btn-close {
+    color: white; /* Make close button text color white */
+    filter: invert(1); /* Invert colors to make the close button white */
+}
+
+.category-nav {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd; /* Optional: Add a bottom border for separation */
+    padding-bottom: 10px; /* Optional: Add padding to separate from content */
+}
+
+.category-nav .nav-link {
+    font-weight: bold;
+    margin-right: 15px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding-bottom: 5px; /* Space for the underline */
+    border-bottom: 2px solid transparent; /* Create space for the underline */
+    transition: border-color 0.3s ease; /* Smooth transition for the underline color */
+}
+
+.category-nav .nav-link:hover {
+    border-bottom: 2px solid #003366; /* Dark blue underline for hover state */
+}
+
+.tab-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h5 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.widget-list {
+    margin-top: 20px;
+}
+
+.widget-list h6 {
+    margin-bottom: 10px;
+}
+
+.widget-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Squared dark red cross button */
+.widget-list .uncheck-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; /* Reduced width */
+    height: 20px; /* Reduced height */
+    background-color: #b22222; /* Dark red background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 3px; /* Slightly rounded corners for a squared appearance */
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size */
+    text-align: center;
+    line-height: 1; /* Adjust line-height to center text */
+}
+
+.widget-list .uncheck-btn:hover {
+    background-color: #a52a2a; /* Slightly darker red on hover */
+}
+
+.widget-list .list-group-item .btn {
+    margin-left: 30px;
+}
+
+/* Align cross button, widget name, and edit button with appropriate margins */
+.widget-list .list-group-item .widget-name {
+    flex-grow: 1; /* Take up remaining space */
+    margin-right: 2px; /* Margin between name and cross button */
+}
+
+.widget-list .list-group-item .edit-btn {
+    background-color: #003366; /* Dark blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 8px 12px; /* Padding for the buttons */
+    margin-left: 10px; /* Margin between the edit button and other elements */
+}
+
+.widget-list .list-group-item .edit-btn:hover {
+    background-color: #001a33; /* Even darker blue on hover */
+}
+
+.edit-widget-section {
+    margin-top: 20px;
+}
+
+.edit-widget-section h5 {
+    margin-bottom: 15px;
+}
+
+.edit-widget-section .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-widget-section .form-control {
+    border-radius: 5px;
+}
+
+/* Add Widget Form Styling */
+.add-widget-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all items horizontally */
+}
+
+.add-widget-form .form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Ensure form groups take full width */
+}
+
+.add-widget-form .btn {
+    background-color: #003366; /* Dark blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 8px 12px; /* Padding for the buttons */
+    margin-top: 10px; /* Space above the button */
+    align-self: center; /* Center the button horizontally */
+}
+
+.add-widget-form .btn:hover {
+    background-color: #001a33; /* Even darker blue on hover */
+}
